@@ -22,6 +22,10 @@ L'IOC container s'occupe de la création des objets et des dépendances entre eu
 ## Spring Bean  
 Un bean est un objet instancié. Il est créé par Spring par le IOC Container (Inversion of Control) lors de la phase de scan
 
+# Spring Initializr
+[Spring Initializr](https://start.spring.io/) est la première étape lors de la création d'un projet Spring. Il permet de générer une archive contenant la base de l'application.  
+Cela permet de facilement configurer le projet notament pour gérer les dépendances requises à l'application (Spring Web, Spring Security, H2 Database etc...)
+
 ## Spring Controller:
 @RestController
 @RequestMapping("/path")
