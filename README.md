@@ -14,16 +14,17 @@
 
 ## Spring  
 # Spring Core
-Base de l'écosystème Spring. Core contient l'[Inversion de Controle conteneur](#IOCC) qui permet d'implémenter le pattern d'injection de dépendances.
+Base de l'écosystème Spring. Core contient l'Inversion de Controle conteneur qui permet d'implémenter le pattern d'injection de dépendances.
 # Spring Data  
 Permet de communiquer avec la BDD
-# Spring Security
+# Spring Security  
+Permet de gérer l’authentification, l’autorisation ainsi que la sécurité des API
 
 ## Inversion Of Control (IOC)  
 L’inversion de contrôle est un principe d’architecture conduisant à inverser le flux de contrôle par rapport au développement traditionnel.  
 Le Framework (ici Spring) fourni une ossature et le développeur fourni le code spécifique attendu par le framework.
 
-### <a id="IOCC"></a> Inversion Of Control Container  
+### Inversion Of Control Container  
 L'IOC container s'occupe de la création des objets et des dépendances entre eux. Au sens large l'IOC container gère le cyle de vie des objets de l'application.
 
 ## Spring Bean  
