@@ -6,11 +6,21 @@
 ## REST  
 **RE**presentational **S**tate **T**ransfer
 
-## Basic CRUD  
-**C**reate  
-**R**ead  
-**U**pdate  
-**D**elete
+## CRUD  
+- **C**reate  -> POST
+- **R**ead    -> GET
+- **U**pdate  -> PUT
+- **D**elete  -> DELETE
+
+## Hypertext Transfer Protocol  
+### Request  
+- Method (= verbe : Get, Post, Delete etc...)  
+- URI (= endpoint)  
+- Body
+### Response  
+- Status Code (ok : 200, not found : 404 etc...)
+- Body
+
 
 # Spring  
 ## Spring Core
