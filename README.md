@@ -12,12 +12,12 @@
 **U**pdate  
 **D**elete
 
-## Spring  
-# Spring Core
+# Spring  
+## Spring Core
 Base de l'écosystème Spring. Core contient l'Inversion de Controle conteneur qui permet d'implémenter le pattern d'injection de dépendances.
-# Spring Data  
+## Spring Data  
 Permet de communiquer avec la BDD
-# Spring Security  
+## Spring Security  
 Permet de gérer l’authentification, l’autorisation ainsi que la sécurité des API
 
 ## Inversion Of Control (IOC)  
