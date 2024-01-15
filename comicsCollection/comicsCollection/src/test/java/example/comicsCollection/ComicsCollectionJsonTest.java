@@ -22,7 +22,7 @@ import java.io.IOException;
 public class ComicsCollectionJsonTest {
 
     /*
-    * @Autowired dit à Spring de tester un objet du type attendu
+    * @Autowired dit à Spring de créer un objet du type attendu
     * */
     @Autowired
     private JacksonTester<ComicsCollection> json;
@@ -44,6 +44,20 @@ public class ComicsCollectionJsonTest {
         assertThat(json.write(comicsCollection)).hasJsonPath("@.comics");
         assertThat(json.write(comicsCollection)).extractingJsonPathValue("@.comics.id").isEqualTo(1);
         assertThat(json.write(comicsCollection)).extractingJsonPathValue("@.comics.title").isEqualTo("Batman return");
+    }
 
+    @Test
+    void comicsCollectionDeserialization() throws IOException {
+        final String expected = """
+                {
+                "id": 2,
+                "comics":
+                    {
+                        "id" : 89,
+                        "title": "Batman year one"
+                    }
+                }
+                """;
+        assertThat(json.parse(expected)).isEqualTo(new ComicsCollection(2L,  new Comics(89L, "Batman year one")));
     }
 }
