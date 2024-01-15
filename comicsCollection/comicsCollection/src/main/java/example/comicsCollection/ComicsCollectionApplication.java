@@ -1,4 +1,4 @@
-package com.example.comicsCollection;
+package example.comicsCollection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
