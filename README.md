@@ -46,4 +46,13 @@ Cela permet de facilement configurer le projet notament pour gérer les dépenda
 
 ## Spring Controller:
 @RestController
-@RequestMapping("/path")
+@RequestMapping("/path")  
+
+## Architecture d'un projet
+Plusieurs couches:  
+- Controllers -> Gestion des intéractions entre l'utilisateur et l'application  
+- Service -> Traitementd métiers
+- Repository -> Intéraction avec les sources de données externes
+- Model -> Implémentation des objets métiers manipulés par les autres couches
+
+Bonne pratique : Il est recommandé de faire un package par couche
