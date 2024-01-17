@@ -38,7 +38,7 @@ Le Framework (ici Spring) fourni une ossature et le développeur fourni le code 
 L'IOC container s'occupe de la création des objets et des dépendances entre eux. Au sens large l'IOC container gère le cyle de vie des objets de l'application.
 
 ## Spring Bean  
-Un bean est un objet instancié. Il est créé par Spring par le IOC Container (Inversion of Control) lors de la phase de scan. C'est donc une classe au sein du contexte Spring. Pour qu'une classe soit déclarée en tant que Bean il faut l'annoter avec @Component. Un Bean est injecté dans un attribut via l'annotation @Autowired
+Un bean est un objet instancié. Il est créé par Spring par le IOC Container (Inversion of Control) lors de la phase de scan. C'est donc une classe au sein du contexte Spring. Pour qu'une classe soit déclarée en tant que Bean il faut l'annoter avec **@Component**. Un Bean est injecté dans un attribut via l'annotation **@Autowired**
 
 # Spring Initializr
 [Spring Initializr](https://start.spring.io/) est la première étape lors de la création d'un projet Spring. Il permet de générer une archive contenant la base de l'application.  
